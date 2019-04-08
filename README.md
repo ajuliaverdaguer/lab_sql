@@ -1,1 +1,1 @@
-# lab_sql
+# SQL Lab
