@@ -1,0 +1,19 @@
+person_id;name;age;gender;house_id;fav_music_gndr;debt_balance
+1;Adrià;27;m;6;techno;-20
+2;Albert;26;m;8;latin;-5
+3;Anna;26;f;3;folk;0
+4;Glòria;26;f;11;indie;-15
+5;Irene;26;f;5;reggaeton;-7.5
+6;Jaume;26;m;12;reggaeton;-7.5
+7;Juanan;26;m;12;reggaeton;-5
+8;Manuel;26;m;5;rock;-10
+9;Marc;26;m;10;cat rock;-12
+10;Maria;26;f;4;folk;-15
+11;Marina;26;f;3;reggaeton;-10
+12;Pau;27;m;2;indie;-6
+13;Paula;26;f;10;pop;-2
+14;Pere;27;m;9;techno;-20
+15;Pol;27;m;6;indie;-15
+16;Ramon;29;m;1;cat rock;-10
+17;Víctor;26;m;9;rock;-22
+18;Xavier;26;m;7;indie;0
