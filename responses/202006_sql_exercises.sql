@@ -26,6 +26,9 @@ select *
 from people
 where fav_music_gndr is null;
 
+select count(*) as total_people, count(fav_music_gndr) as total_n_music
+from people
+
 -- 5
 select distinct fav_music_gndr
 from people
@@ -41,10 +44,16 @@ order by n_followers DESC;
 -- 7 
 -- List all names starting with "Ma" 
 -- Hint! Check for SUBSTRING or LEFT build-in functions
+
+-- Checking, first
+select substring(name from 1 for 2) 
+from people
+
 select name, fav_music_gndr
 from people
 where left(name, 2) = 'Ma';
 -- where substring(name from 1 for 2) = 'Ma'
+-- where name like 'Ma%'
 
 -- 8 (session 2)
 select fav_music_gndr, 
@@ -69,6 +78,16 @@ where fav_music_gndr is not null
 group by fav_music_gndr;
 
 -- 9
+select 
+    case 
+        when fav_music_gndr != 'reggaeton' then 'opositor'
+        else 'follower'
+    end as reggaeton_like,
+    count(*) as n_people
+from people
+where fav_music_gndr is not null
+group by reggaeton_like
+
 select sum(case when fav_music_gndr != 'reggaeton' then 1 else 0 end) as opositors,
 sum(case when fav_music_gndr = 'reggaeton' then 1 else 0 end) as followers
 from people;
